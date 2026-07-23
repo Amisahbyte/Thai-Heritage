@@ -1,0 +1,278 @@
+<!DOCTYPE html>abou
+
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thai Heritage Restaurant — Authentic Halal Thai Cuisine in Malaysia</title>
+<meta name="description" content="Thai Heritage Restaurant — Authentic Halal Thai Cuisine in Malaysia. Signature Thai dishes, favourite Malaysian classics, and traditional drinks in an elegant, temple-inspired setting.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!-- AOS -->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<!-- Swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ LOADER ============ -->
+<div id="loader">
+  <svg viewBox="0 0 200 120" fill="none">
+    <path class="elephant-path" d="M20 90 Q20 60 45 55 Q40 35 60 30 Q85 24 100 40 Q120 35 130 50 Q150 50 155 70 Q160 90 140 95 L130 95 L128 105 L120 105 L120 95 L60 95 L58 105 L50 105 L50 95 L30 95 Q18 95 20 90 Z"/>
+    <circle cx="52" cy="45" r="2" fill="#E8C462"/>
+  </svg>
+  <p data-i18n="loading">Preparing your table…</p>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar navbar-thai" id="mainNav">
+  <div class="container d-flex align-items-center justify-content-between">
+    <a class="brand" href="#home">THAI<span> HERITAGE</span></a>
+    <button class="d-lg-none icon-btn" id="mobileToggle"><i class="fa-solid fa-bars"></i></button>
+    <div class="d-none d-lg-flex align-items-center" id="navLinks">
+      <a class="nav-link-thai" href="#home" data-i18n="nav_home">Home</a>
+      <a class="nav-link-thai" href="#about" data-i18n="nav_about">About Us</a>
+      <a class="nav-link-thai" href="#menu" data-i18n="nav_menu">Menu</a>
+      <a class="nav-link-thai" href="#promotion" data-i18n="nav_promo">Promotion</a>
+      <a class="nav-link-thai" href="#gallery" data-i18n="nav_gallery">Gallery</a>
+      <a class="nav-link-thai" href="#reservation" data-i18n="nav_reservation">Reservation</a>
+      <a class="nav-link-thai" href="#contact" data-i18n="nav_contact">Contact</a>
+    </div>
+    <div class="d-none d-lg-flex align-items-center gap-2">
+      <div class="lang-pill">
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="ms">MY</button>
+      </div>
+      <button class="icon-btn" id="darkToggle" title="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="d-lg-none" style="display:none;background:var(--cream-2);margin-top:.6rem;">
+    <div class="d-flex flex-column p-3">
+      <a class="nav-link-thai text-dark py-2" href="#home" data-i18n="nav_home">Home</a>
+      <a class="nav-link-thai text-dark py-2" href="#about" data-i18n="nav_about">About Us</a>
+      <a class="nav-link-thai text-dark py-2" href="#menu" data-i18n="nav_menu">Menu</a>
+      <a class="nav-link-thai text-dark py-2" href="#promotion" data-i18n="nav_promo">Promotion</a>
+      <a class="nav-link-thai text-dark py-2" href="#gallery" data-i18n="nav_gallery">Gallery</a>
+      <a class="nav-link-thai text-dark py-2" href="#reservation" data-i18n="nav_reservation">Reservation</a>
+      <a class="nav-link-thai text-dark py-2" href="#contact" data-i18n="nav_contact">Contact</a>
+      <div class="d-flex align-items-center gap-2 mt-2">
+        <div class="lang-pill"><button data-lang="en" class="active text-dark">EN</button><button data-lang="ms" class="text-dark">MY</button></div>
+        <button class="icon-btn" id="darkToggleMobile"><i class="fa-solid fa-moon"></i></button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="home">
+  <div class="swiper heroSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><div class="slide-img" style="background-image:url('https://images.unsplash.com/photo-1559847844-5315695dadae?q=80&w=1600&auto=format&fit=crop')"></div></div>
+      <div class="swiper-slide"><div class="slide-img" style="background-image:url('https://images.unsplash.com/photo-1569562211093-4ed0d0758f12?q=80&w=1600&auto=format&fit=crop')"></div></div>
+      <div class="swiper-slide"><div class="slide-img" style="background-image:url('https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?q=80&w=1600&auto=format&fit=crop')"></div></div>
+    </div>
+  </div>
+  <img class="float-orn d-none d-md-block" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='70' height='70' viewBox='0 0 70 70'%3E%3Cg fill='none' stroke='%23E8C462' stroke-width='1.5'%3E%3Cellipse cx='35' cy='35' rx='6' ry='16' transform='rotate(0 35 35)'/%3E%3Cellipse cx='35' cy='35' rx='6' ry='16' transform='rotate(60 35 35)'/%3E%3Cellipse cx='35' cy='35' rx='6' ry='16' transform='rotate(120 35 35)'/%3E%3Ccircle cx='35' cy='35' r='4' fill='%23E8C462' stroke='none'/%3E%3C/g%3E%3C/svg%3E" style="top:18%;left:6%;width:70px;">
+  <img class="float-orn d-none d-md-block" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 70 70'%3E%3Cg fill='none' stroke='%23E8C462' stroke-width='1.5'%3E%3Cellipse cx='35' cy='35' rx='6' ry='16' transform='rotate(0 35 35)'/%3E%3Cellipse cx='35' cy='35' rx='6' ry='16' transform='rotate(60 35 35)'/%3E%3Cellipse cx='35' cy='35' rx='6' ry='16' transform='rotate(120 35 35)'/%3E%3Ccircle cx='35' cy='35' r='4' fill='%23E8C462' stroke='none'/%3E%3C/g%3E%3C/svg%3E" style="bottom:22%;right:8%;width:60px;animation-delay:2s;">
+  <div class="hero-content">
+    <div class="eyebrow" data-aos="fade-down" data-i18n="hero_eyebrow">Since the Streets of Bangkok</div>
+    <h1 class="hero-title" data-aos="fade-up" data-i18n="hero_title">Thai Heritage Restaurant</h1>
+    <p class="hero-sub" data-aos="fade-up" data-aos-delay="150" data-i18n="hero_sub">Authentic Halal Thai Cuisine in Malaysia</p>
+    <div class="hero-btns" data-aos="fade-up" data-aos-delay="300">
+      <a href="#menu" class="btn-thai solid" data-i18n="hero_btn1">View Menu</a>
+      <a href="#reservation" class="btn-thai" data-i18n="hero_btn2">Reservation</a>
+      <a href="https://wa.me/6287895699950" target="_blank" class="btn-thai" data-i18n="hero_btn3">Order Online</a>
+    </div>
+  </div>
+  <div class="scroll-cue"><i class="fa-solid fa-angles-down"></i></div>
+</header>
+
+<!-- ============ ABOUT ============ -->
+<section class="section-pad" id="about">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="about-img">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1000&auto=format&fit=crop" alt="Thai chef preparing food">
+        </div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <div class="eyebrow mb-2" data-i18n="about_eyebrow">Our Story</div>
+        <h2 class="section-title mb-3" data-i18n="about_title">About Us</h2>
+        <p class="mb-4" style="color:var(--ink-soft);font-size:1.05rem;" data-i18n="about_text">Bringing the authentic taste of Thailand to Malaysia with halal ingredients and traditional recipes, crafted by Thai-trained chefs and served in a home away from Bangkok.</p>
+        <div class="row g-3">
+          <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="0">
+            <div class="pillar text-center"><i class="fa-solid fa-pepper-hot"></i><h4>🌶</h4><h4 style="font-size:1rem;" data-i18n="pillar1_t">Authentic Recipe</h4><p data-i18n="pillar1_d">Traditional Thai techniques</p></div>
+          </div>
+          <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="pillar text-center"><i class="fa-solid fa-leaf"></i><h4 style="font-size:1rem;" data-i18n="pillar2_t">Fresh Ingredients</h4><p data-i18n="pillar2_d">Sourced daily, always fresh</p></div>
+          </div>
+          <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
+            <div class="pillar text-center"><i class="fa-solid fa-mosque"></i><h4 style="font-size:1rem;" data-i18n="pillar3_t">100% Halal</h4><p data-i18n="pillar3_d">Certified halal kitchen</p></div>
+          </div>
+          <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="300">
+            <div class="pillar text-center"><i class="fa-solid fa-hat-chef"></i><h4 style="font-size:1rem;" data-i18n="pillar4_t">Thai Chef</h4><p data-i18n="pillar4_d">Trained in Thailand</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="kranok-divider"></div>
+
+<!-- ============ MENU ============ -->
+<section class="section-pad menu-section" id="menu">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="eyebrow justify-content-center mb-2" data-i18n="menu_eyebrow">Taste of Thailand &amp; Malaysia</div>
+      <h2 class="section-title" data-i18n="menu_title">Our Menu</h2>
+    </div>
+    <div class="menu-tabs" id="menuTabs"></div>
+    <div class="row g-4" id="menuGrid"></div>
+  </div>
+</section>
+
+<!-- ============ PROMOTION ============ -->
+<section class="section-pad promo-section" id="promotion">
+  <img class="float-orn" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='100' viewBox='0 0 80 100'%3E%3Cg fill='none' stroke='%23E8C462' stroke-width='1.3' opacity='0.6'%3E%3Cellipse cx='40' cy='45' rx='30' ry='36'/%3E%3Cline x1='40' y1='9' x2='40' y2='0'/%3E%3Cline x1='10' y1='55' x2='10' y2='75'/%3E%3Cline x1='70' y1='55' x2='70' y2='75'/%3E%3C/g%3E%3C/svg%3E" style="top:8%;left:3%;width:70px;">
+  <div class="container position-relative">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="eyebrow justify-content-center mb-2" style="color:var(--gold-soft);"><span></span><span data-i18n="promo_eyebrow">Limited Time</span></div>
+      <h2 class="section-title" style="color:#fff;" data-i18n="promo_title">Special Promotions</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="flip-left" data-aos-delay="0">
+        <div class="promo-card"><div class="fire">🔥</div><h4 data-i18n="promo1_t">Lunch Set</h4><div class="price-tag">RM19.90</div><p class="mt-2 mb-0" style="opacity:.85;font-size:.85rem;" data-i18n="promo1_d">Weekday lunch, 11am–3pm</p></div>
+      </div>
+      <div class="col-md-4" data-aos="flip-left" data-aos-delay="150">
+        <div class="promo-card"><div class="fire">🔥</div><h4 data-i18n="promo2_t">Family Package</h4><div class="price-tag">RM89</div><p class="mt-2 mb-0" style="opacity:.85;font-size:.85rem;" data-i18n="promo2_d">Feeds 4, includes dessert</p></div>
+      </div>
+      <div class="col-md-4" data-aos="flip-left" data-aos-delay="300">
+        <div class="promo-card"><div class="fire">🔥</div><h4 data-i18n="promo3_t">Buy 2 Thai Tea</h4><div class="price-tag" style="font-size:1.3rem;" data-i18n="promo3_d">Free Dessert</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section-pad" id="gallery">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="eyebrow justify-content-center mb-2" data-i18n="gallery_eyebrow">A Glimpse Inside</div>
+      <h2 class="section-title" data-i18n="gallery_title">Gallery</h2>
+    </div>
+    <div class="gallery-grid" id="galleryGrid" data-aos="fade-up" data-aos-delay="100"></div>
+  </div>
+</section>
+<div class="kranok-divider"></div>
+
+<!-- ============ RESERVATION ============ -->
+<section class="section-pad reservation-section" id="reservation" style="background:var(--cream-2);">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="eyebrow mb-2" data-i18n="res_eyebrow">Book Your Table</div>
+        <h2 class="section-title mb-3" data-i18n="res_title">Reservation</h2>
+        <p style="color:var(--ink-soft);" data-i18n="res_text">Reserve your table for an unforgettable evening of Thai hospitality. Prefer to chat? Message us directly on WhatsApp.</p>
+        <a href="https://wa.me/6287895699950" target="_blank" class="btn-thai solid mt-2"><i class="fa-brands fa-whatsapp me-2"></i><span data-i18n="res_whatsapp">Chat on WhatsApp — +62 878 9569 9950</span></a>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <form class="reservation-card" id="reservationForm">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="thai-label" data-i18n="form_name">Name</label>
+              <input type="text" class="form-control form-control-thai" required>
+            </div>
+            <div class="col-md-6">
+              <label class="thai-label" data-i18n="form_phone">Phone Number</label>
+              <input type="tel" class="form-control form-control-thai" required>
+            </div>
+            <div class="col-md-4">
+              <label class="thai-label" data-i18n="form_date">Date</label>
+              <input type="date" class="form-control form-control-thai" required>
+            </div>
+            <div class="col-md-4">
+              <label class="thai-label" data-i18n="form_time">Time</label>
+              <input type="time" class="form-control form-control-thai" required>
+            </div>
+            <div class="col-md-4">
+              <label class="thai-label" data-i18n="form_guests">Number of Guests</label>
+              <input type="number" min="1" value="2" class="form-control form-control-thai" required>
+            </div>
+            <div class="col-12 mt-4">
+              <button type="submit" class="btn-thai solid w-100" data-i18n="form_btn">Reserve Table</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section-pad" id="contact">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="eyebrow mb-2" data-i18n="contact_eyebrow">Find Us</div>
+        <h2 class="section-title mb-4" data-i18n="contact_title">Contact</h2>
+        <div class="contact-item"><i class="fa-solid fa-location-dot"></i><div><h6 data-i18n="contact_addr_t">Address</h6><p class="mb-0" style="color:var(--ink-soft);">12, Jalan Bukit Bintang, 55100 Kuala Lumpur, Malaysia</p></div></div>
+        <div class="contact-item"><i class="fa-solid fa-clock"></i><div><h6 data-i18n="contact_hours_t">Opening Hours</h6><p class="mb-0" style="color:var(--ink-soft);" data-i18n="contact_hours_d">Daily, 11:00 AM – 11:00 PM</p></div></div>
+        <div class="contact-item"><i class="fa-solid fa-phone"></i><div><h6 data-i18n="contact_phone_t">Phone</h6><p class="mb-0" style="color:var(--ink-soft);">+62 878 9569 9950</p></div></div>
+        <div class="social-row mt-4">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <iframe class="map-frame" loading="lazy" src="https://www.google.com/maps?q=Bukit%20Bintang%20Kuala%20Lumpur&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container text-center">
+    <a class="brand d-inline-block mb-3" href="#home">THAI<span style="color:var(--dark-text);"> HERITAGE</span></a>
+    <p class="slogan" data-i18n="footer_slogan">"Experience the Taste of Thailand in Every Bite."</p>
+    <hr class="my-4">
+    <div class="d-flex flex-wrap justify-content-center gap-4 mb-3">
+      <a href="#home" data-i18n="nav_home">Home</a>
+      <a href="#menu" data-i18n="nav_menu">Menu</a>
+      <a href="#reservation" data-i18n="nav_reservation">Reservation</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </div>
+    <p class="mb-0" style="font-size:.78rem;opacity:.6;">&copy; 2026 Thai Heritage Restaurant. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX (klik foto untuk perbesar) ============ -->
+<div id="lightbox" class="lightbox-overlay">
+  <button id="lightboxClose" class="lightbox-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+  <img id="lightboxImg" src="" alt="">
+  <p id="lightboxCaption" class="lightbox-caption"></p>
+</div>
+
+<a href="https://wa.me/6287895699950" target="_blank" class="whatsapp-float"><i class="fa-brands fa-whatsapp"></i></a>
+<button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-angle-up"></i></button>
+
+<!-- ============ SCRIPTS ============ -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
